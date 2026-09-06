@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+*.session
+*.session-journal
+/tmp_secure/
+.pytest_cache/
+venv/
+.venv/
+*.egg-info/

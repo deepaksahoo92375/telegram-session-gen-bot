@@ -1,0 +1,16 @@
+# Bot framework
+aiogram==3.28.2
+
+# Telegram client libraries (pin to latest stable as verified on PyPI)
+Telethon==1.37.0
+pyrogram==2.0.106
+TgCrypto==1.2.5
+
+# Config / utils
+python-dotenv==1.0.1
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# Testing
+pytest==8.3.3
+pytest-asyncio==0.24.0

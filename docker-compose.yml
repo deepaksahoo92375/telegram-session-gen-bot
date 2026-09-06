@@ -1,0 +1,20 @@
+services:
+  session-bot:
+    build: .
+    container_name: tg-session-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    tmpfs:
+      - /tmp/tgsession_secure:mode=0700,uid=1000,gid=1000
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    networks:
+      - session-bot-net
+
+networks:
+  session-bot-net:
+    driver: bridge
